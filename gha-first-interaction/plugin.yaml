@@ -14,3 +14,12 @@ technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/
   - "Github Actions"
 types:
   - app
+inputs:
+  - label: Issue first interaction message
+    type: text
+    name: issue_message
+    default: Thank you for opening this ISSUE. We'll give you a return ASAP 👍
+  - label: PR first interaction message
+    type: text
+    name: pr_message
+    default: Thank you for your contribution. We'll give you a return ASAP 👍"
