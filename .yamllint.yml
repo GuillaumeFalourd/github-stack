@@ -27,3 +27,11 @@ rules:
     level: warning
     allow-non-breakable-inline-mappings: true
   truthy: disable
+
+# YAML files in those folders use Jinja and may not respect the commum yaml language
+ignore: |
+  gha-auto-assign/templates/
+  gha-first-interaction/templates/
+  gha-gitleaks/templates/
+  gha-horusec/templates/
+  gha-super-linter/templates/
