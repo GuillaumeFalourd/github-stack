@@ -1,4 +1,4 @@
-name: Gitleaks
+name: GitlLeaks
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -7,7 +7,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  gitleaks:
+  GitLeaks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
