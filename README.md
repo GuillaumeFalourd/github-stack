@@ -1,8 +1,8 @@
 [![Super Linter](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/super-linter.yml) [![Horusec](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/horusec.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/horusec.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/gitleaks.yml)
 
-# Github Stack POC
+# GitHub Stack POC
 
-Repository used as a [StackSpot](https://www.stackspot.com/) proof of concept using Github.
+Repository used as a [StackSpot](https://www.stackspot.com/) proof of concept using GitHub.
 
 # Usage
 
@@ -27,7 +27,7 @@ Stack: github-stack-poc
 +----------------+--------------------------------------------+------------------+-----------------+
 | name           | description                                | types            | version(latest) |
 +----------------+--------------------------------------------+------------------+-----------------+
-| new-repository | Template to create a new github repository | ['app-template'] | no release      |
+| new-repository | Template to create a new GitHub repository | ['app-template'] | no release      |
 +----------------+--------------------------------------------+------------------+-----------------+
 ```
 
@@ -38,21 +38,21 @@ Stack: github-stack-poc
 +---------------------+--------------------------------------------------------+---------+-----------------+
 | name                | description                                            | types   | version(latest) |
 +---------------------+--------------------------------------------------------+---------+-----------------+
-| gha-auto-assign     | Plugin to add a auto-assign github actions workflow    | ['app'] | no release      |
+| gha-auto-assign     | Plugin to add a auto-assign GitHub actions workflow    | ['app'] | no release      |
 |                     |                                                        |         |                 |
-| gha-first-interacti | Plugin to add a first-interaction github actions       | ['app'] | no release      |
+| gha-first-interacti | Plugin to add a first-interaction GitHub actions       | ['app'] | no release      |
 | on                  | workflow                                               |         |                 |
 |                     |                                                        |         |                 |
-| gha-gitleaks        | Plugin to add a gitleaks github actions workflow       | ['app'] | no release      |
+| gha-gitleaks        | Plugin to add a gitleaks GitHub actions workflow       | ['app'] | no release      |
 |                     |                                                        |         |                 |
-| gha-horusec         | Plugin to add a horusec github actions workflow        | ['app'] | no release      |
+| gha-horusec         | Plugin to add a horusec GitHub actions workflow        | ['app'] | no release      |
 |                     |                                                        |         |                 |
-| gha-super-linter    | Plugin to add a super-linter github actions workflow   | ['app'] | no release      |
+| gha-super-linter    | Plugin to add a super-linter GitHub actions workflow   | ['app'] | no release      |
 |                     |                                                        |         |                 |
-| issue-templates     | Plugin to add issue templates to the github repository | ['app'] | no release      |
+| issue-templates     | Plugin to add issue templates to the GitHub repository | ['app'] | no release      |
 |                     |                                                        |         |                 |
 | pull-request-templa | Plugin to add a pull-request template to the           | ['app'] | no release      |
-| te                  | github repository                                      |         |                 |
+| te                  | GitHub repository                                      |         |                 |
 +---------------------+--------------------------------------------------------+---------+-----------------+
 ```
 
@@ -64,6 +64,6 @@ Stack: github-stack-poc
 | name    | description                                   | type |
 +---------+-----------------------------------------------+------+
 | default | Template to create a new repository with some | app  |
-|         | Github default and Actions files              |      |
+|         | GitHub default and Actions files              |      |
 +---------+-----------------------------------------------+------+
 ```
