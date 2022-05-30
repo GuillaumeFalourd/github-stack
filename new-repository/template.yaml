@@ -1,5 +1,5 @@
 name: new-repository
-description: Template to create a new github repository
+description: Template to create a new GitHub repository
 types:
   - app-template
 inputs:

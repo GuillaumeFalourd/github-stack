@@ -1,5 +1,5 @@
 name: gha-gitleaks
-description: Plugin to add a gitleaks github actions workflow
+description: Plugin to add a gitleaks GitHub actions workflow
 display-name: gha-gitleaks
 picture: plugin.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
@@ -11,6 +11,6 @@ usage: docs/usage.md
 use-case: docs/use-case.md
 implementation: docs/implementation.md
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
-  - "Github Actions"
+  - "GitHub Actions"
 types:
   - app

@@ -1,5 +1,5 @@
 type: app
-description: Template to create a new repository with some Github default and Actions files
+description: Template to create a new repository with some GitHub default and Actions files
 # template used to create the project
 template: github-stack/new-repository
 inputs:

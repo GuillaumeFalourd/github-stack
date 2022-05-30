@@ -1,6 +1,6 @@
 # Security Policy
 
-The my-new-awesome-project team takes all security bugs in their repositories seriously. 
+The github-stack-poc team takes all security bugs in their repositories seriously. 
 
 Thank you for improving the project's security! We appreciate your efforts to disclose the issue responsibly, and will make every effort to acknowledge your contributions.
 
