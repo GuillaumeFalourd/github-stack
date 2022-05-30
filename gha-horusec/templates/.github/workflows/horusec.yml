@@ -7,7 +7,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  checking_code:
+  horusec:
     runs-on: ubuntu-latest
     name: Horusec Scan
     steps:

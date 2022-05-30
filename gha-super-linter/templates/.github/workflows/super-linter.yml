@@ -7,7 +7,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  linter:
     name: Super Linter
     runs-on: ubuntu-latest
     steps:
