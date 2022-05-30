@@ -1,11 +1,10 @@
-description: Stack to setup github repositories
+description: Stack to setup GitHub repositories
 name: github-stack-poc
 display-name: github-stack-poc
 picture: stack.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility: # Put a list of technologies compatible with the stack
-  - java
-  - spring
+  - GitHub
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies 
   - docker 
 about: docs/about.md

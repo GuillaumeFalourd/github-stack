@@ -4,8 +4,7 @@ display-name: gha-super-linter
 picture: plugin.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility:
-  - java
-  - spring
+  - GitHub
 about: docs/about.md
 usage: docs/usage.md
 use-case: docs/use-case.md
