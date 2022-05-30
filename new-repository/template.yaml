@@ -1,0 +1,11 @@
+name: new-repository
+description: Template to create a new github repository
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+global-computed-inputs:
+  project_name_sanitized: "{{inputs.project_name|replace(' ', '-')|lower}}"

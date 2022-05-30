@@ -1,0 +1,16 @@
+name: gha-first-interaction
+description: Plugin to add a first-interaction github actions workflow
+display-name: gha-first-interaction
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+compatibility:
+  - java
+  - spring
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
+  - "Github Actions"
+types:
+  - app

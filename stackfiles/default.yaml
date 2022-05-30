@@ -1,14 +1,15 @@
 type: app
-description: Default stackfile usecase description
+description: Template to create a new repository with some Github default and Actions files
 # template used to create the project
-template: github-stack/<template-name>
+template: github-stack/new-repository
 inputs:
-  some_input: value
+  project_name: my-new-awesome-project
 # list of plugins to be applied after project creation
 plugins:
-  - plugin: github-stack/<plugin-name>
-    inputs:
-      some_input: value
-      some_list:
-        - item1
-        - item2
+  - plugin: github-stack/issue-templates
+  - plugin: github-stack/pull-request-template
+  - plugin: github-stack/gha-first-interaction
+  - plugin: github-stack/gha-auto-assign
+  - plugin: github-stack/gha-horusec
+  - plugin: github-stack/gha-gitleaks
+  - plugin: github-stack/gha-super-linter
