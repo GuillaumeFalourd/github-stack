@@ -3,7 +3,7 @@ description: Template to create a new repository with some Github default and Ac
 # template used to create the project
 template: github-stack/new-repository
 inputs:
-  project_name: my-new-awesome-project
+  project_name: github-stack-poc
 # list of plugins to be applied after project creation
 plugins:
   - plugin: github-stack/issue-templates
