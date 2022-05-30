@@ -9,6 +9,9 @@ plugins:
   - plugin: github-stack/issue-templates
   - plugin: github-stack/pull-request-template
   - plugin: github-stack/gha-first-interaction
+    inputs:
+      issue_message: Thank you for opening this ISSUE. We'll give you a return ASAP 👍
+      pr_message: Thank you for your contribution. We'll give you a return ASAP 👍
   - plugin: github-stack/gha-auto-assign
   - plugin: github-stack/gha-horusec
   - plugin: github-stack/gha-gitleaks

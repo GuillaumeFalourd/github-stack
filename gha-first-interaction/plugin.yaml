@@ -22,4 +22,4 @@ inputs:
   - label: PR first interaction message
     type: text
     name: pr_message
-    default: Thank you for your contribution. We'll give you a return ASAP 👍"
+    default: Thank you for your contribution. We'll give you a return ASAP 👍
