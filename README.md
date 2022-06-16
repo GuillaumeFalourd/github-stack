@@ -1,10 +1,14 @@
-[![Super Linter](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/super-linter.yml) [![Horusec](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/horusec.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/horusec.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack-poc/actions/workflows/gitleaks.yml)
+[![Super Linter](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/super-linter.yml) [![Horusec](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/horusec.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/horusec.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/gitleaks.yml)
 
-# GitHub Stack POC
+# GitHub Stack
 
 Repository used as a [StackSpot](https://www.stackspot.com/) proof of concept using GitHub.
 
 # Usage
+
+```shell
+stk import stack https://github.com/GuillaumeFalourd/github-stack
+```
 
 This stack is a proof of concept showing how the STK CLI can be used to create a new repository template with some default and actions workflow files already configured.
 
@@ -23,7 +27,7 @@ This implies files such as:
 ### Available Templates
 
 ```shell
-Stack: github-stack-poc
+Stack: github-stack
 +----------------+--------------------------------------------+------------------+-----------------+
 | name           | description                                | types            | version(latest) |
 +----------------+--------------------------------------------+------------------+-----------------+
@@ -34,7 +38,7 @@ Stack: github-stack-poc
 ### Available Plugins
 
 ```shell
-Stack: github-stack-poc
+Stack: github-stack
 +---------------------+--------------------------------------------------------+---------+-----------------+
 | name                | description                                            | types   | version(latest) |
 +---------------------+--------------------------------------------------------+---------+-----------------+
@@ -59,7 +63,7 @@ Stack: github-stack-poc
 ### Available Stackfiles
 
 ```shell
-Stack: github-stack-poc
+Stack: github-stack
 +---------+-----------------------------------------------+------+
 | name    | description                                   | type |
 +---------+-----------------------------------------------+------+
