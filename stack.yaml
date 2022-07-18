@@ -1,6 +1,6 @@
 description: Stack to setup GitHub repositories
-name: github-stack-poc
-display-name: github-stack-poc
+name: github-stack
+display-name: github-stack
 picture: stack.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility: # Put a list of technologies compatible with the stack
