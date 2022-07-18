@@ -1,1 +1,29 @@
 # About
+
+This plugin will add the following workflow to the repository where it is applied:
+
+```yaml
+name: Horusec
+
+on: [push, workflow_dispatch]
+
+concurrency:
+  group: {{ '${{ github.workflow }}' }}-{{ '${{ github.ref }}' }}
+  cancel-in-progress: true
+
+jobs:
+  horusec:
+    runs-on: ubuntu-latest
+    name: Horusec Scan
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with: # Required when commit authors is enabled
+          fetch-depth: 0
+      - name: Running Horusec Security
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
+          horusec start -p="./" -e="true"
+```
+
+[Horusec reference](https://horusec.io/site/)

@@ -1,1 +1,31 @@
 # About
+
+This plugin will add the following workflow to the repository where it is applied:
+
+```yaml
+name: Super Linter
+
+on: [push, workflow_dispatch]
+
+concurrency:
+  group: {{ '${{ github.workflow }}' }}-{{ '${{ github.ref }}' }}
+  cancel-in-progress: true
+
+jobs:
+  linter:
+    name: Super Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Lint Code Base
+        uses: github/super-linter@v4.9.2
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: {{ '${{ secrets.GITHUB_TOKEN }}' }}
+```
+
+[Action reference](https://github.com/github/super-linter)

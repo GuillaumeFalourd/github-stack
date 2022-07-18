@@ -1,12 +1,12 @@
-name: pull-request-template
-description: Plugin to add a pull-request template to the github repository
-display-name: pull-request-template
+name: gha-devsecops
+description: Plugin to add a devsecops GitHub actions workflow
+display-name: gha-devsecops
 picture: plugin.png
 category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 compatibility:
   - GitHub
 about: docs/about.md
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
-  - "Github"
+  - "GitHub Actions"
 types:
   - app
