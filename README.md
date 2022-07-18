@@ -44,6 +44,8 @@ Stack: github-stack
 +---------------------+--------------------------------------------------------+---------+-----------------+
 | gha-auto-assign     | Plugin to add a auto-assign GitHub actions workflow    | ['app'] | no release      |
 |                     |                                                        |         |                 |
+| gha-devsecops       | Plugin to add a devsecops GitHub actions workflow      | ['app'] | no release      |
+|                     |                                                        |         |                 |
 | gha-first-interacti | Plugin to add a first-interaction GitHub actions       | ['app'] | no release      |
 | on                  | workflow                                               |         |                 |
 |                     |                                                        |         |                 |
