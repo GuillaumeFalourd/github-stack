@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-next-line MD041 -->
 [![Super Linter](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/super-linter.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/super-linter.yml) [![Horusec](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/horusec.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/horusec.yml) [![Gitleaks](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/GuillaumeFalourd/github-stack/actions/workflows/gitleaks.yml)
 
 # GitHub Stack
@@ -24,7 +25,7 @@ This implies files such as:
 - `.github/PULL_REQUEST_TEMPLATE.md`
 - `.github/workflows/*` (security, first interaction, auto-assign, linters...)
 
-### Available Templates
+## Available Templates
 
 ```shell
 Stack: github-stack
@@ -35,7 +36,7 @@ Stack: github-stack
 +----------------+--------------------------------------------+------------------+-----------------+
 ```
 
-### Available Plugins
+## Available Plugins
 
 ```shell
 Stack: github-stack
@@ -62,7 +63,7 @@ Stack: github-stack
 +---------------------+--------------------------------------------------------+---------+-----------------+
 ```
 
-### Available Stackfiles
+## Available Stackfiles
 
 ```shell
 Stack: github-stack
