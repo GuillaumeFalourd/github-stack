@@ -54,6 +54,19 @@ Stack: github-stack
 +---------------------+--------------------------------------------------------+---------+-----------------+
 ```
 
+## Available Tasks
+
+```shell
+Stack: github-stack
++----------------+--------------------------------------------+
+| name           | description                                |
++----------------+--------------------------------------------+
+| create-release | Task to create a GitHub repository release |
+|                |                                            |
+| create-repo    | Task to create a remote GitHub repository  |
++----------------+--------------------------------------------+
+```
+
 ## Available Stackfiles
 
 ```shell
