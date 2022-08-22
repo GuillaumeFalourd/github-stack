@@ -1,4 +1,4 @@
-name: create-remote
+name: create-repo
 description: Task to create a remote GitHub repository
 inputs:
   - label: GitHub Personal Access Token (PAT)
@@ -33,8 +33,8 @@ requirements-check:
     info: python3 is not installed
 command:
   windows: |
-        python3 "{{ component_path }}\scripts\create_remote.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
+        python3 "{{ component_path }}\scripts\create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
   linux: |
-        python3 "{{ component_path }}/scripts/create_remote.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
+        python3 "{{ component_path }}/scripts/create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
   mac: |
-        python3 "{{ component_path }}/scripts/create_remote.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
+        python3 "{{ component_path }}/scripts/create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}

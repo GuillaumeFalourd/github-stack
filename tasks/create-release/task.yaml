@@ -1,0 +1,42 @@
+name: create-release
+description: Task to create a GitHub repository release
+inputs:
+  - label: GitHub Personal Access Token (PAT)
+    type: password
+    name: personal_access_token
+    required: 'true'
+  - label: Repository Owner
+    type: text
+    name: github_repository_owner
+    required: 'true'
+  - label: Repository Name
+    type: text
+    name: github_repository_name
+    required: 'true'
+  - label: Release branch reference
+    type: text
+    name: github_release_branch
+    required: 'true'
+  - label: Release tag version
+    type: text
+    name: github_release_tag_version
+    required: 'true'
+  - label: Release Description
+    type: text
+    name: github_release_description
+    default: 'Release generated using StackSpot'
+supported-os:
+  - windows
+  - linux
+  - mac
+requirements-check:
+  dependency-example:
+    check-command: python3 --version
+    info: python3 is not installed
+command:
+  windows: |
+        python3 "{{ component_path }}\scripts\create_release.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_release_branch }} {{ github_release_tag_version }} {{ github_release_description }}
+  linux: |
+        python3 "{{ component_path }}/scripts/create_release.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_release_branch }} {{ github_release_tag_version }} {{ github_release_description }}
+  mac: |
+        python3 "{{ component_path }}/scripts/create_release.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_release_branch }} {{ github_release_tag_version }} {{ github_release_description }}
