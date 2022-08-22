@@ -1,0 +1,40 @@
+name: create-remote
+description: Task to create a remote GitHub repository
+inputs:
+  - label: GitHub Personal Access Token (PAT)
+    type: password
+    name: personal_access_token
+    required: 'true'
+  - label: Repository Name
+    type: text
+    name: github_repository_name
+    required: 'true'
+  - label: Is it a private repo?
+    type: text
+    name: private
+    items:
+      - 'yes'
+      - 'no'
+    required: 'true'
+  - label: Clone the repository to current path?
+    type: text
+    name: clone
+    items:
+      - 'yes'
+      - 'no'
+    required: 'true'
+supported-os:
+  - windows
+  - linux
+  - mac
+requirements-check:
+  dependency-example:
+    check-command: python3 --version
+    info: python3 is not installed
+command:
+  windows: |
+        python3 "{{ component_path }}\scripts\create_remote.py {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}"
+  linux: |
+        python3 "{{ component_path }}/scripts/create_remote.py {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}"
+  mac: |
+        python3 "{{ component_path }}/scripts/create_remote.py {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}"

@@ -25,17 +25,6 @@ This implies files such as:
 - `.github/PULL_REQUEST_TEMPLATE.md`
 - `.github/workflows/*` (security, first interaction, auto-assign, linters...)
 
-## Available Templates
-
-```shell
-Stack: github-stack
-+----------------+--------------------------------------------+------------------+-----------------+
-| name           | description                                | types            | version(latest) |
-+----------------+--------------------------------------------+------------------+-----------------+
-| new-repository | Template to create a new GitHub repository | ['app-template'] | no release      |
-+----------------+--------------------------------------------+------------------+-----------------+
-```
-
 ## Available Plugins
 
 ```shell
@@ -57,6 +46,8 @@ Stack: github-stack
 | gha-super-linter    | Plugin to add a super-linter GitHub actions workflow   | ['app'] | no release      |
 |                     |                                                        |         |                 |
 | issue-templates     | Plugin to add issue templates to the GitHub repository | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| new-repository      | Plugin to create a new GitHub repository               | ['app'] | no release      |
 |                     |                                                        |         |                 |
 | pull-request-templa | Plugin to add a pull-request template to the           | ['app'] | no release      |
 | te                  | GitHub repository                                      |         |                 |
