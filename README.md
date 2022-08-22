@@ -58,13 +58,15 @@ Stack: github-stack
 
 ```shell
 Stack: github-stack
-+----------------+--------------------------------------------+
-| name           | description                                |
-+----------------+--------------------------------------------+
-| create-release | Task to create a GitHub repository release |
-|                |                                            |
-| create-repo    | Task to create a remote GitHub repository  |
-+----------------+--------------------------------------------+
++----------------+-------------------------------------------------+
+| name           | description                                     |
++----------------+-------------------------------------------------+
+| add-secret     | Task to add / update a GitHub repository secret |
+|                |                                                 |
+| create-release | Task to create a GitHub repository release      |
+|                |                                                 |
+| create-repo    | Task to create a remote GitHub repository       |
++----------------+-------------------------------------------------+
 ```
 
 ## Available Stackfiles
