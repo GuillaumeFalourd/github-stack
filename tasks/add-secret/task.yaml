@@ -1,0 +1,44 @@
+name: add-secret
+description: Task to add / update a GitHub repository secret
+inputs:
+  - label: GitHub Personal Access Token (PAT)
+    type: password
+    name: personal_access_token
+    required: 'true'
+  - label: Repository Owner
+    type: text
+    name: github_repository_owner
+    required: 'true'
+  - label: Repository Name
+    type: text
+    name: github_repository_name
+    required: 'true'
+  - label: Secret Name
+    type: text
+    name: github_secret_name
+    required: 'true'
+  - label: Secret Value
+    type: password
+    name: github_secret_value
+    required: 'true'
+supported-os:
+  - windows
+  - linux
+  - mac
+requirements-check:
+  python3-dependency:
+    check-command: python3 --version
+    info: python3 is not installed
+  pip-dependency:
+    check-command: pip --version
+    info: pip is not installed
+command:
+  windows: |
+        pip install -r "{{ component_path }}\scripts\requirements.txt"
+        python3 "{{ component_path }}\scripts\add_secret.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_secret_name }} {{ github_secret_value }}
+  linux: |
+        pip install -r "{{ component_path }}/scripts/requirements.txt"
+        python3 "{{ component_path }}/scripts/add_secret.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_secret_name }} {{ github_secret_value }}
+  mac: |
+        pip install -r "{{ component_path }}/scripts/requirements.txt"
+        python3 "{{ component_path }}/scripts/add_secret.py" {{ personal_access_token }} {{ github_repository_owner }} {{ github_repository_name }} {{ github_secret_name }} {{ github_secret_value }}
