@@ -30,7 +30,7 @@ supported-os:
   - linux
   - mac
 requirements-check:
-  dependency-example:
+  python3-dependency:
     check-command: python3 --version
     info: python3 is not installed
 command:
