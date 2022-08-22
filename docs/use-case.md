@@ -21,3 +21,55 @@ Note that you can create the template and apply all available plugins at once us
 ```shell
 stk create app <APP-NAME> --stackfile github-stack/default
 ```
+
+* * *
+
+# Available Templates
+
+```shell
+Stack: github-stack
++----------------+--------------------------------------------+------------------+-----------------+
+| name           | description                                | types            | version(latest) |
++----------------+--------------------------------------------+------------------+-----------------+
+| new-repository | Template to create a new GitHub repository | ['app-template'] | no release      |
++----------------+--------------------------------------------+------------------+-----------------+
+```
+
+## Available Plugins
+
+```shell
+Stack: github-stack
++---------------------+--------------------------------------------------------+---------+-----------------+
+| name                | description                                            | types   | version(latest) |
++---------------------+--------------------------------------------------------+---------+-----------------+
+| gha-auto-assign     | Plugin to add a auto-assign GitHub actions workflow    | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| gha-devsecops       | Plugin to add a devsecops GitHub actions workflow      | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| gha-first-interacti | Plugin to add a first-interaction GitHub actions       | ['app'] | no release      |
+| on                  | workflow                                               |         |                 |
+|                     |                                                        |         |                 |
+| gha-gitleaks        | Plugin to add a gitleaks GitHub actions workflow       | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| gha-horusec         | Plugin to add a horusec GitHub actions workflow        | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| gha-super-linter    | Plugin to add a super-linter GitHub actions workflow   | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| issue-templates     | Plugin to add issue templates to the GitHub repository | ['app'] | no release      |
+|                     |                                                        |         |                 |
+| pull-request-templa | Plugin to add a pull-request template to the           | ['app'] | no release      |
+| te                  | GitHub repository                                      |         |                 |
++---------------------+--------------------------------------------------------+---------+-----------------+
+```
+
+# Available Stackfiles
+
+```shell
+Stack: github-stack
++---------+-----------------------------------------------+------+
+| name    | description                                   | type |
++---------+-----------------------------------------------+------+
+| default | Template to create a new repository with some | app  |
+|         | GitHub default and Actions files              |      |
++---------+-----------------------------------------------+------+
+```
