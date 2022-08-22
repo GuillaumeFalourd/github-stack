@@ -31,10 +31,16 @@ requirements-check:
   python3-dependency:
     check-command: python3 --version
     info: python3 is not installed
+  pip-dependency:
+    check-command: pip --version
+    info: pip is not installed
 command:
   windows: |
+        pip install -r "{{ component_path }}\scripts\requirements.txt"
         python3 "{{ component_path }}\scripts\create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
   linux: |
+        pip install -r "{{ component_path }}/scripts/requirements.txt"
         python3 "{{ component_path }}/scripts/create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
   mac: |
+        pip install -r "{{ component_path }}/scripts/requirements.txt"
         python3 "{{ component_path }}/scripts/create_repo.py" {{ personal_access_token }} {{ github_repository_name }} {{ private }} {{ clone }}
